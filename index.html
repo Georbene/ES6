@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="show"></div>
+    <div id="display"></div>
+    <script>
+        // const foodThatWishToEat1 = 'Rice and Turkey'
+
+
+        // <------------------>
+        let foood= 'semo'
+        foood = 'beans'
+        console.log(foood);
+
+
+        // <------------------>
+        const haveMoney = true
+        // // havemoney = false
+        console.log(haveMoney);
+
+
+        let food = [
+            {
+                name: 'Rice',
+                rating: 10.7
+            },
+            {
+                name: 'Bread',
+                rating: 7.7
+            },
+            {
+                name: 'Beans',
+                rating: 12.7
+            },
+            {
+                name: 'noodle',
+                rating: 5.7
+            }
+        ]
+        for (let index = 0; index < food.length; index++) {
+            const element = food[index];
+            
+            show.innerHTML += `
+            <p>${element.name}</p>
+            <p>${element.rating}</p>
+            `
+        }
+        // <------Heigher order function------->
+
+            // food.map((element)=>{
+            //     show.innerHTML += `
+            //     <h1>${element.name}</h1>
+            //     <h1>${element.rating}</h1>
+            //     `
+            // })
+
+            const addNum = (a, b) => {
+                return a + b;
+            }
+            const minusNum = (a, b) => {
+                return a - b;
+            }
+            let sum = addNum(3,5);
+            let difference = minusNum(6,4);
+
+            console.log(sum,difference);
+            display.innerHTML = `
+            <p>The sum is ${sum} and the difference is ${difference}</p>
+            `
+
+
+        // let allNigeriaFoods = [
+        //     {
+        //         name: 'eba',
+        //         rating: 7.0
+        //     },
+        //     {
+        //         name: 'semo',
+        //         rating: 7.0 
+        //     },
+        //     {
+        //         name: 'rice',
+        //         rating: 7.0
+        //     }
+        //  ]
+        //  for (let index = 0; index < allNigeriaFoods.length; index++) {
+        //     const element = allNigeriaFoods[index];
+        //     show.innerHTML += `
+        //     <p>${element.name}</p>
+        //     <p>${element.rating}</p>
+        //     `
+        //  }
+        //  allNigeriaFoods.map((element)=>{
+        //     show.innerHTML += `
+        //     <h1>${element.name}</h1>
+        //     <h1>${element.rating}</h1>
+        //     `
+        //  })
+
+
+        // let food = 'semo'
+        // food = ''
+        //  var allNigeriaFoods = [
+        //     {
+        //         Name: 'iyan',
+        //         rating: 5.5
+        //     },
+        //      {
+        //         Name: 'semo',
+        //         rating: 6.5
+        //     },
+        //      {
+        //         Name: 'amala',
+        //         rating: 7.5
+        //     },
+        //      {
+        //         Name: 'eba',
+        //         rating: 7.0
+        //     },
+        //      {
+        //         Name: 'fufu',
+        //         rating: 4.5
+        //     },
+        //  ]
+        // for (let index = 0; index < allNigeriaFoods.lenght; index++) {
+        //     const element = allNigeriaFoods[index];
+        //     show.innerHTML += `
+        //     <p>${element.name}</p>
+        //     <p>${element.rating}</p>
+        //     `
+        // }
+
+        // allNigeriaFoods.map((element)=>{
+        //     show.innerHTML += `
+        //     <h2>${index+1}</h2>
+        //     <h1>${element.name}</h1>
+        //     <h1>${element.rating}</h1>
+        //     `
+        // })
+
+
+        // function testing() {
+            
+        // }
+        // const testing2 = () => {
+        //     alert("I am arrow")
+        // }
+        // testing2()
+
+        
+
+        
+        // <------------------>
+        // const addNum = (a,b ) => {
+        //     return a + b;
+        // }
+        // const minusNum = (a,b) => {
+        //     return a - b
+        // }
+        // let sum = addNum(3,5)
+        // let difference = minusNum(6,2)
+        // console.log(sum, difference);
+        // show.innerHTML = `The sum is ${sum} while the difference is ${difference}
+        // while the interpolation is ${sum * difference}`
+    </script>
+</body>
+</html>
